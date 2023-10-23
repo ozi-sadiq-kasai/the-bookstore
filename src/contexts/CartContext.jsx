@@ -31,7 +31,7 @@ if(item.id === id){
 }
 console.log(cart)
 
-  return <CartContext.Provider value={{addToCart}}>
+  return <CartContext.Provider value={{addToCart,cart}}>
    {children}
    </CartContext.Provider>
 }

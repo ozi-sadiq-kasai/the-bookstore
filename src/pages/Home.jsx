@@ -4,7 +4,7 @@ import Product from "../components/Product"
 import Sidebar from "../components/Sidebar"
 const Home = () => {
   return (
-    <div>
+    <div className=" bg-slate-200">
       <Sidebar />
       <Header />
       <Hero />

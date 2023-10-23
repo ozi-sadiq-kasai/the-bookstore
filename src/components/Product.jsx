@@ -12,9 +12,9 @@ const Product = () => {
  })
  
   return (
-    <main className="border-4 w-full ">
-      <h2>Adult</h2>
-      <section className="container mx-auto flex gap-6 max-sm:flex-col">
+    <main className="container mx-auto border-4 border-red-900   ">
+      <h2 >Adult</h2>
+      <section className="mx-auto flex gap-6 max-sm:flex-col">
         {adultCat.map((product) => {
           return <ProductItem key={product.id} product={product} />
         })}

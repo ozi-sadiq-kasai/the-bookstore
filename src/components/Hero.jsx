@@ -1,10 +1,10 @@
 const Hero = () => {
   return (
-    <div className="w-full ">
+    <div className="">
       <img
         src={'src/assets/images/background0.jpg'}
         alt="books background image"
-        className="w-full object-fill h-80"
+        className='object-cover md:w-full h-80'
       />
     </div>
   )
