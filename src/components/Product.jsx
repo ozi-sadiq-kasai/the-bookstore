@@ -12,21 +12,20 @@ const Product = () => {
  })
  
   return (
-    <main className="container mx-auto">
+    <main className="container mx-auto overflow-hidden py-8">
       <h2 className="my-1 text-gray-500">Adult</h2>
-      <section className="flex justify-around max-sm:flex-col">
+      <section className="flex flex-wrap">
         {adultCat.map((product) => {
           return <ProductItem key={product.id} product={product} />
         })}
       </section>
 
       <h2 className="my-1 text-gray-500">Children</h2>
-      <section className="container mx-auto flex gap-6 max-sm:flex-col">
+      <section className="flex flex-wrap">
         {childCat.map((product) => {
           return <ProductItem key={product.id} product={product} />
         })}
       </section>
-      <div></div>
     </main>
   )
 }

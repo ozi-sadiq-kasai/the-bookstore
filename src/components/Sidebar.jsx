@@ -15,9 +15,9 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`h-full w-full bg-white fixed top-[4.5rem] md:w-[35vw] xl:max-w-[30vw] transition-transform duration-300 px-4 lg:px-[35px] z-10 opacity-90 ${sidebarClassName}`}
+      className={`h-full w-full bg-white fixed top-[4.5rem] md:w-[35vw] xl:max-w-[30vw] transition-transform duration-300 px-4 lg:px-[35px] z-10 opacity-90 ${sidebarClassName} border border-red-100 max-h-[500px] overflow-auto`}
     >
-      <div className="border-b flex justify-end">
+      <div className="border-b flex justify-end ">
         <div
           className="cursor-pointer h-10 flex items-center text-gray-500 hover:text-green-400"
           onClick={handleClose}
@@ -35,11 +35,13 @@ const Sidebar = () => {
           Total:<span>&#8358;</span>
           {totalAmount}
         </p>
-        <div className='h-10 w-10 border flex items-center justify-center bg-red-900 cursor-pointer'>
+        <div className="h-10 w-10 border flex items-center justify-center bg-red-900 cursor-pointer">
           <BsTrash onClick={clearCart} className="text-white " />
         </div>
       </div>
-      <button className='border py-4 px-16 mt-5 ml-10 bg-green-500 text-white'>CHECKOUT</button>
+      <button className="border py-4 px-16 mt-5 ml-10 bg-green-500 text-white">
+        CHECKOUT
+      </button>
     </div>
   )
 }

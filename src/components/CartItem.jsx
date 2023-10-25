@@ -8,8 +8,8 @@ const CartItem = ({item}) => {
  const { removeCart, addQuantity, removeQuantity } = useContext(CartContext)
  const{title,image,price,amount,id} = item
   return (
-    <div className="m-4 border-b relative px-2">
-      <div className="flex justify-between items-center mb-2 gap-2">
+    <div className="m-4 border-b relative px-2 ">
+      <div className="flex justify-between items-center mb-2 gap-2 ">
         <div className="w-2/5 flex-2">
           <img src={image} alt={title} />
         </div>
@@ -37,7 +37,6 @@ const CartItem = ({item}) => {
               onClick={() => removeCart(id)}
               className="text-gray-500 hover:text-red-500  transition"
             />
-           
           </div>
           <span>&#8358;</span>
           {price * amount}
