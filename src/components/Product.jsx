@@ -12,7 +12,7 @@ const Product = () => {
  })
  
   return (
-    <main className="container mx-auto overflow-hidden py-8">
+    <main className="container mx-auto overflow-hidden py-1">
       <h2 className="my-1 text-gray-500">Adult</h2>
       <section className="flex flex-wrap">
         {adultCat.map((product) => {
